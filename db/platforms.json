@@ -1,0 +1,42 @@
+[
+  {
+    "name": "PC (Microsoft Windows)",
+    "category": 4
+  },
+  {
+    "name": "PlayStation 4",
+    "category": 1
+  },
+  {
+    "name": "Xbox One",
+    "category": 1
+  },
+  {
+    "name": "Google Stadia",
+    "category": 3
+  },
+  {
+    "name": "Nintendo Switch",
+    "category": 1
+  },
+  {
+    "name": "Mac",
+    "category": 4
+  },
+  {
+    "name": "Wii U",
+    "category": 1
+  },
+  {
+    "name": "Linux",
+    "category": 4
+  },
+  {
+    "name": "PlayStation 3",
+    "category": 1
+  },
+  {
+    "name": "PlayStation Network",
+    "category": 3
+  }
+]
