@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: criticx_alpha_development
+  username: postgres
+  password: 9jis2428ml
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +60,8 @@ development:
 test:
   <<: *default
   database: criticx_alpha_test
+  username: postgres
+  password: 9jis2428ml
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,5 +85,14 @@ test:
 production:
   <<: *default
   database: criticx_alpha_production
-  username: criticx_alpha
-  password: <%= ENV['CRITICX_ALPHA_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: 9jis2428ml
+  #username: criticx_alpha
+  #password: <%= ENV['CRITICX_ALPHA_DATABASE_PASSWORD'] %>
+
+#rails generate model Platform name:string category:integer
+#rails generate model Genre name:string
+#rails generate model InvolvedCompany company:references game:references developer:boolean publisher:boolean
+#Platform
+#Genre
+#InvolvedCompany (this is a join table which have its own model)
