@@ -4,9 +4,10 @@ class Review < ApplicationRecord
   before_save :ensure_count_is_initialized
   after_create :increase_review_count
   after_destroy :decrease_review_count
+  validates :title, presence: true, length: { maximum: 40 }, uniqueness: true
+  validates :body, presence: true
 
   private
-
   def ensure_count_is_initialized
     return unless user.review_count.nil?
     user.review_count = 0
